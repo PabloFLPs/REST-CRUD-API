@@ -7,7 +7,7 @@ This application is a CRUD API, CRUD is assign to "Create, Read, Update and Dele
 - update user route;
 - delete user route.
 
-This is a simple application without interaction with any databases, so the users in question are added in run-time execution and remain available while the API is running.
+This is a simple application without interaction with any databases, so the users in question are added in run-time and remain available while the API is running. For the users ID attibute, was used the uuid - Universal Unic Identifier library to generate IDs.
 
 
 ## Settings to run:
