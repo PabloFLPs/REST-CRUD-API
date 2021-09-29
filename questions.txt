@@ -2,3 +2,27 @@
 -> O que são params, query e body?
 -> Porque usar body-parser (ou express.json())? 
 -> Qual a diferença de res.send e res.json ?
+
+Middleware: e um software que fornece servicos intermediarios para a aplicacao ou software principal em questao. No
+caso do express.json(), ele faz o reconhecimento de as nossas entradas de requisicao a API serao do tipo JSON.
+Implementacao: basicamente, a gnt esta dizendo a nossa aplicacao que serao recebidos dados de entrada do tipo JSON,
+entao a implemetacao e app.use(bodyParser.json())/app.use(express.json()).
+
+Params: sao parametros passados na propria rota em questao que sao usados para fazer ou encontrar algo especifico co-
+mo por exemplo, um id de usuario passado cmo parametro para ser retornado o usuario em questao.
+
+Query: sao parametros utilizando para busca e filtro, assim cmo em banco de dados. Porem, diferente de params, e pas-
+sado por exemplo /id=2 ou inves de apenas /2 e e mais utilizado com interacao com banco de dados. No caso desta API,
+temos todas as operacoes, filtros, buscas realizadas com metodos de Array, por isso apenas "params" foi utilizado.
+
+Body: e todo o corpo da requisicao. Por exemplo, no caso da criacao de usuarios, e usado o req.body para pegar todo o
+corpo do json passado na requisicao feita a API para salvar em uma variavel e dar "push" no array de users.
+
+body-parser ou express.json(): middleware
+
+res.send - envia literalmente o tipo de dado em questao. No caso desta API, como os usuarios sao cada um json dentro
+de um array de usuarios; ao dar "res.send(users)" e enviado o ARRAY de JSONs [{}].
+
+res.json - converte o dado em questao para o formato json; cmo por exemplo, se tivermos um objeto JavaScript e darmos
+um res.json(obj), sera mostrado o obj em formato json. "When an object or array is passed to it, this method is iden-
+tical to res.send()".
