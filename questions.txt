@@ -1,0 +1,4 @@
+-> O que é um middleware e como implementar.
+-> O que são params, query e body?
+-> Porque usar body-parser (ou express.json())? 
+-> Qual a diferença de res.send e res.json ?
