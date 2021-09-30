@@ -1,7 +1,7 @@
 -> O que é um middleware e como implementar.
 -> O que são params, query e body?
 -> Porque usar body-parser (ou express.json())? 
--> Qual a diferença de res.send e res.json ?
+-> Qual a diferença de res.send e res.json?
 
 Middleware: e um software que fornece servicos intermediarios para a aplicacao ou software principal em questao. No
 caso do express.json(), ele faz o reconhecimento de as nossas entradas de requisicao a API serao do tipo JSON.
